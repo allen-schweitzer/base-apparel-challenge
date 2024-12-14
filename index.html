@@ -5,23 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Base Apparel Coming Soon</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="js/script.js"></script>
 </head>
 <body>
-  <div class="container">
+  <main class="container">
     <div class="content">
       <img src="images/logo.svg" alt="Base Apparel Logo" class="logo">
       <h1>We’re <span>Coming Soon</span></h1>
       <p>Hello fellow shoppers! We’re currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      <form class="email-form">
-        <input 
-          type="email" 
-          placeholder="Email Address" 
-          class="email-input" 
-          required>
-        <button type="submit" class="submit-btn">
-          <img src="images/icon-arrow.svg" alt="Submit">
-        </button>
-        <span class="error-msg">Please provide a valid email address</span>
+      <form class="email-form" novalidate>
+        <div class="input-wrapper">
+          <input 
+            type="email" 
+            placeholder="Email Address" 
+            class="email-input" 
+            required>
+          <button type="submit" class="submit-btn">
+            <img src="images/icon-arrow.svg" alt="Submit">
+          </button>
+        </div>
+        <span class="error-msg" id="error-msg">Please provide a valid email address</span>
       </form>
     </div>
     <div class="hero">
@@ -30,6 +33,6 @@
         <img src="images/hero-desktop.jpg" alt="Hero Image">
       </picture>
     </div>
-  </div>
+  </main>
 </body>
 </html>
